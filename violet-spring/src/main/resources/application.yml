@@ -1,0 +1,24 @@
+server:
+  port: 80
+spring:
+  profiles:
+    active: dev
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/violet
+    username: atlant1c
+    password: atlant1c
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+redis:
+  host: localhost
+  port: 6379
+  password: 123456
+
+jwt:
+  encrypt-jwt-key: VDzKdNZG88SoiBBN
+  access-token-expire-time: 259200
+  refresh-token-expire-time: 345600
